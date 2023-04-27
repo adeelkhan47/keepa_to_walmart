@@ -1,6 +1,7 @@
 import datetime
 import json
 import logging
+import time
 import urllib
 from urllib.parse import urlencode
 
@@ -83,7 +84,7 @@ def read_input_data():
 
 def right_output(data_fame):
     df = DataFrame(data_fame)
-    df.to_csv(f"results/Result.csv")
+    df.to_csv(f"results/Result{str(time.time()).replace('.', '')}.csv")
 
 
 def prepare_dataframe(products):
