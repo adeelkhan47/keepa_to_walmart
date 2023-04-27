@@ -83,7 +83,7 @@ def read_input_data():
 
 def right_output(data_fame):
     df = DataFrame(data_fame)
-    df.to_csv(f"results/Result({str(datetime.datetime.now())}).csv")
+    df.to_csv(f"results/Result.csv")
 
 
 def prepare_dataframe(products):
