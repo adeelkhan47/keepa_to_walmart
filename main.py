@@ -9,7 +9,7 @@ import requests
 from bs4 import BeautifulSoup
 from pandas import DataFrame
 from pandas import read_csv
-
+logging.basicConfig(level=logging.INFO)
 AccessKey = '7aqr4ii5rnvpaqu7ufm807slm66d1kpvf1btdll8oefeihh6k05bpbnjj2ffb8pn'
 SCRAPEOPS_API_KEY = 'aeb417fe-4e6e-45ba-93c4-29119d05ac14'
 
